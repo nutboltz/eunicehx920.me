@@ -1,0 +1,65 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "files": ["**/*.ts", "**/*.tsx"],
+    "project": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "standard",
+    "plugin:prettier/recommended",
+  ],
+  "env": { "browser": true, "node": true, "cypress/globals": true },
+  "overrides": [
+    // Only uses Testing Library lint rules in test files
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"],
+      "env": { "jest": true }
+    }
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "no-use-before-define": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "space-before-function-parent": 0,
+    "no-eval": 2,
+    "no-implied-eval": 2,
+    "import/export": 0,
+    "standard/no-callback-literal": 0,
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": ["variable"],
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": ["function"],
+        "format": ["camelCase", "PascalCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": ["interface"],
+        "format": ["PascalCase"],
+        "leadingUnderscore": "forbid"
+      },
+    ]
+  }
+}
