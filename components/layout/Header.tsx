@@ -2,7 +2,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { LayoutGroup, motion } from "framer-motion";
 import { cn } from "utils/tailwind";
-import { ThemeToggler } from "./ThemeToggle"
+import { ThemeToggler } from "./ThemeToggle";
 import React from "react";
 
 const navItems = {
