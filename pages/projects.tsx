@@ -39,16 +39,20 @@ export default function Projects() {
               </p>
 
               <div className="flex space-x-2 self-end">
-                <SocialLink
-                  href={project.repo}
-                  className="h-6 w-6 flex-none"
-                  icon={IconBrandGithub}
-                />
-                <SocialLink
-                  href={project.external}
-                  className="h-6 w-6 flex-none"
-                  icon={IconLink}
-                />
+                {project.repo ? (
+                  <SocialLink
+                    href={project.repo}
+                    className="h-6 w-6 flex-none"
+                    icon={IconBrandGithub}
+                  />
+                ) : null}
+                {project.external ? (
+                  <SocialLink
+                    href={project.external}
+                    className="h-6 w-6 flex-none"
+                    icon={IconLink}
+                  />
+                ) : null}
               </div>
             </div>
           ))}

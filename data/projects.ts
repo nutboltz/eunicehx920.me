@@ -1,4 +1,6 @@
-export const WEB_APPS = [
+import { WebAppProject, ToolProject } from "@/interfaces/projects";
+
+export const WEB_APPS: WebAppProject[] = [
   // {
   //   title: "Pass Man",
   //   repo: "https://github.com/adarshaacharya/PassMan",
@@ -8,9 +10,9 @@ export const WEB_APPS = [
   //     "Cloud based password manager, create vault for personal and business purpose and store the credentials of different type. Credentials are hashed using AES256 algorithm, and one way hashing is done using Scrypt algorithm.",
   //   tags: ["Next.js", "Next Auth", "Prisma", "Docker", "Chakra UI"],
   // },
-] as const;
+];
 
-export const TOOLS = [
+export const TOOLS: ToolProject[] = [
   // {
   //   title: "shitcommits",
   //   repo: "https://github.com/adarshaacharya/shitcommits",

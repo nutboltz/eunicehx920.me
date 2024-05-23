@@ -1,10 +1,10 @@
 import { IconBrandGithub } from "@tabler/icons-react";
 import { SocialLink } from "@/components/SocialLink";
-import { WEB_APPS } from "@/data/projects";
 import Image from "next/image";
+import { WebAppProject } from "@/interfaces/projects";
 
 type ProjectCardProps = {
-  project: (typeof WEB_APPS)[number];
+  project: WebAppProject;
 };
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
@@ -38,13 +38,15 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             </p>
           ))}
         </div>
-        <div className="flex items-center">
-          <SocialLink
-            icon={IconBrandGithub}
-            href={project.repo}
-            className="h-6 w-6 flex-none"
-          />
-        </div>
+        {project.repo ? (
+          <div className="flex items-center">
+            <SocialLink
+              icon={IconBrandGithub}
+              href={project.repo}
+              className="h-6 w-6 flex-none"
+            />
+          </div>
+        ) : null}
       </div>
     </div>
   );
