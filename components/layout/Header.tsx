@@ -16,9 +16,6 @@ const navItems = {
 
 export function Header() {
   let pathname = usePathname() || "/";
-  if (pathname.includes("/blog/")) {
-    pathname = "/blog";
-  }
 
   return (
     <div className="mb-10 tracking-tight mt-10">

@@ -18,15 +18,13 @@ export default function GetStartedPage() {
 
         <div className="text-gray-700 dark:text-gray-300">
           <p className="mt-4">
-            I&apos;m a fullstack product engineer specializing in building 0-1
-            products. I like building things that I believe can improve the
-            world we live in. Sometimes I build things just for the fun of it
-            too.
+            I&apos;m a fullstack product engineer with experience building 0-1
+            products. I like building things that I believe are useful or interesting.
           </p>
           <p className="mt-4 mb-4">
             I have experience building and shipping end-to-end products in
             Fin-tech, SaaS and Consumer domains. I also have roots in Data
-            Engineering and Data Infrastructure. Currently, I&apos;m building AI
+            Engineering and Data Infrastructure so whenever I&apos;m not building for a quick product iteration I do enjoy thinking about scalable systems and watching pipeline observability shine green. Currently, I&apos;m building AI
             solutions at &nbsp;
             <a
               href="https://www.joincape.ai/"
@@ -40,10 +38,10 @@ export default function GetStartedPage() {
 
           <p className="mt-4 mb-4">
             Personal interests include Food 🍣, &nbsp;Tea 🍵, &nbsp;Video Games
-            🎮 and Virtual Reality / Mixed Reality 🥽 .
-            <p>
-              Lately I&nbsp;ve been dabbling a little into plants 🌱 as well.
-            </p>
+            🎮 and Virtual Reality / Mixed Reality 🥽.
+            <span>
+              {" "}Lately I&apos;ve been dabbling a little into plants 🌱 as well.
+            </span>
           </p>
 
           <p className="mb-4">

@@ -1,10 +1,10 @@
-import { IconBrandGithub } from "@tabler/icons-react";
+import { IconBrandGithub, IconLink } from "@tabler/icons-react";
 import { SocialLink } from "@/components/SocialLink";
 import Image from "next/image";
-import { WebAppProject } from "@/interfaces/projects";
+import { Project } from "@/interfaces/projects";
 
 type ProjectCardProps = {
-  project: WebAppProject;
+  project: Project;
 };
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
@@ -38,15 +38,34 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             </p>
           ))}
         </div>
-        {project.repo ? (
-          <div className="flex items-center">
+        <div className="z-10 mb-6 mt-6 flex flex-wrap gap-1 ">
+          {project.techs.map((techStackItem) => (
+            <p
+              className="hover:text-primary dark:hover:text-primary inline-flex items-center rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs leading-4 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-200"
+              key={techStackItem}
+            >
+              {techStackItem}
+            </p>
+          ))}
+        </div>
+        <div className="flex flex-row gap-x-2">
+          {project.repo ? (
+            <div className="flex items-center">
+              <SocialLink
+                icon={IconBrandGithub}
+                href={project.repo}
+                className="h-6 w-6 flex-none"
+              />
+            </div>
+          ) : null}
+          {project.external ? (
             <SocialLink
-              icon={IconBrandGithub}
-              href={project.repo}
+              href={project.external}
               className="h-6 w-6 flex-none"
+              icon={IconLink}
             />
-          </div>
-        ) : null}
+          ) : null}
+        </div>
       </div>
     </div>
   );
