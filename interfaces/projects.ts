@@ -9,4 +9,3 @@ export type Project = {
   external: string;
   techs: string[];
 };
-
