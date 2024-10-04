@@ -1,6 +1,6 @@
 import { Project } from "@/interfaces/projects";
 
-export const PROJECTS: Project[] = [
+export const HACKATHONS: Project[] = [
   {
     title: "Trippin (FEMHack 2024)",
     repo: "https://github.com/nutboltz/tripto",
@@ -12,7 +12,7 @@ export const PROJECTS: Project[] = [
     description:
       "We gather your group's travel inspiration and preferences from your social media platforms to create an optimized group travel itinerary.",
     tags: ["Hackathon", "AI"],
-    techs: ["Next.js", "Prisma", "Docker"],
+    techs: ["Next.js", "Prisma", "Docker", "Tailwind CSS", "Vercel"],
   },
   {
     title: "Astra (HackAIthon 2024 by Craft Ventures)",
@@ -31,5 +31,18 @@ export const PROJECTS: Project[] = [
       "Google APIs",
       "playwright",
     ],
+  },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    title: "(Ongoing) Inventory Management System",
+    external: "",
+    thumbnail: "/projects/inventory/app.png",
+    imageFolder: "/projects/inventory/",
+    description:
+      "Custom inventory/investing app made for a local business to manage their stocks and total net worth. Local business had a unique use case where they were dealing with stocks that increased in value over time. Features include being able to break down the stock into smaller units, track the stock's price history, weighted average cost, and more.",
+    tags: ["SME", "Saas"],
+    techs: ["Remix", "Prisma", "Docker", "Railway", "Mantine"],
   },
 ];
