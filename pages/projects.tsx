@@ -16,7 +16,9 @@ export default function Projects() {
             <ProjectCard project={project} key={idx} />
           ))}
         </div>
-        <h1 className="mb-4 text-2xl font-bold tracking-tighter mt-16">Other Projects</h1>
+        <h1 className="mb-4 text-2xl font-bold tracking-tighter mt-16">
+          Other Projects
+        </h1>
         <div
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 "
