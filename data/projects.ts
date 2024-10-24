@@ -17,7 +17,7 @@ export const HACKATHONS: Project[] = [
   {
     title: "Astra (HackAIthon 2024 by Craft Ventures)",
     external: "https://youtu.be/_cwOTL23eT0",
-    demo: "https://youtu.be/_cwOTL23eT0",
+    xUrl: "https://x.com/AlexReibman/status/1798557347301998596?t=DlJVBdmrDx6vC9rc0xFjtA&s=09",
     thumbnail: "/hackathons/HackAIthon2024/hackaithon1.jpeg",
     imageFolder: "/hackathons/HackAIthon2024/",
     description:

@@ -1,4 +1,4 @@
-import { IconBrandGithub, IconLink } from "@tabler/icons-react";
+import { IconBrandGithub, IconLink, IconBrandX } from "@tabler/icons-react";
 import { SocialLink } from "@/components/SocialLink";
 import Image from "next/image";
 import { Project } from "@/interfaces/projects";
@@ -63,6 +63,13 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
               href={project.external}
               className="h-6 w-6 flex-none"
               icon={IconLink}
+            />
+          ) : null}
+          {project.xUrl ? (
+            <SocialLink
+              href={project.xUrl}
+              className="h-6 w-6 flex-none"
+              icon={IconBrandX}
             />
           ) : null}
         </div>
