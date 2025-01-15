@@ -12,7 +12,7 @@ export const HACKATHONS: Project[] = [
     description:
       "We gather your group's travel inspiration and preferences from your social media platforms to create an optimized group travel itinerary.",
     tags: ["Hackathon", "AI"],
-    techs: ["Next.js", "Prisma", "Docker", "Tailwind CSS", "Vercel"],
+    techs: ["React", "Typescript", "Next.js", "Prisma", "Docker", "Tailwind CSS", "Vercel"],
   },
   {
     title: "Astra (HackAIthon 2024 by Craft Ventures)",
@@ -43,6 +43,16 @@ export const PROJECTS: Project[] = [
     description:
       "Custom inventory/investing app made for a local business to manage their stocks and total net worth. Local business had a unique use case where they were dealing with stocks that increased in value over time. Features include being able to break down the stock into smaller units, track the stock's price history, weighted average cost, and more.",
     tags: ["SME", "Saas"],
-    techs: ["Remix", "Prisma", "Docker", "Railway", "Mantine"],
+    techs: ["React", "Typescript","Remix", "Prisma", "Docker", "Railway", "Mantine"],
+  },
+  {
+    title: "(Ongoing) AI Video Co-pilot",
+    external: "www.kawara.ai",
+    thumbnail: "/projects/video/main.png",
+    imageFolder: "/projects/video/",
+    description:
+      "Kawara is an AI video assistant that helps video editing noobs start creating videos. It's a tool that allows you easily slice, organize and edit your videos.",
+    tags: ["SME", "Saas"],
+    techs: ["Python", "React", "Typescript", "Remix", "Prisma", "Docker", "Railway", "Vercel", "Tailwind CSS", "Mantine", "Google Cloud Function", "ffmpeg", "OpenAI"],
   },
 ];
